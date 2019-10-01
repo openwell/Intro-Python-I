@@ -22,3 +22,23 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+
+def myCalender(x=None, y=None):
+    if x is None:
+        c = calendar.TextCalendar(calendar.SUNDAY)
+        str = c.formatmonth(datetime.now().year, datetime.now().month)
+        print(str)
+    elif x is not None and y is None:
+        c = calendar.TextCalendar(calendar.SUNDAY)
+        str = c.formatmonth(datetime.now().year, x)
+        print(str)
+    elif y is not None:
+        c = calendar.TextCalendar(calendar.SUNDAY)
+        str = c.formatmonth(y, x)
+        print(str)
+
+
+myCalender()
+myCalender(1)
+myCalender(6, 2018)
