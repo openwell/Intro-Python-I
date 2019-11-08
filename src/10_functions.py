@@ -2,7 +2,17 @@
 
 # YOUR CODE HERE
 
-# Read a number from the keyboard
+
+def is_even(x):
+    sum = None
+    if x % 2 == 1:
+        sum = False
+    else:
+        sum = True
+    return print(sum)
+
+is_even(2)
+    # Read a number from the keyboard
 num = input("Enter a number: ")
 num = int(num)
 
@@ -10,3 +20,12 @@ num = int(num)
 
 # YOUR CODE HERE
 
+
+def oddEven(x):
+    if x % 2 == 1:
+        print('odd')
+    else:
+        print('even')
+
+
+oddEven(num)
